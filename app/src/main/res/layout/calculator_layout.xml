@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<!--
+*********************************************
+* calculator_layout.xml
+* Corresponding activity: CalculatorActivity.java
+* Prefix: cl_ (Used for prefixing unique identifiers)
+*
+* Use:
+*   Demonstrate a simple calculator
+*   Demonstrate text views, edit text, buttons, business logic
+*********************************************
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@android:color/darker_gray">
+
+    <!-- Operand 1-->
+    <TextView
+        android:id="@+id/tvwOperand1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operand_1"/>
+    <EditText
+        android:id="@+id/etxOperand1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"/>
+
+    <!-- Operand 2 -->
+    <TextView
+        android:id="@+id/tvwOperand2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/operand_2"/>
+    <EditText
+        android:id="@+id/etxOperand2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"/>
+
+    <!-- Buttons for Various Operators -->
+    <TextView
+        android:id="@+id/tvwVariousOperators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/various_operators"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!-- + Operator -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus"/>
+
+        <!-- - operator-->
+        <Button
+            android:id="@+id/btnSubstract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minus"
+            />
+
+        <!-- * operator -->
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asterisk"/>
+
+        <!-- / operator -->
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forwardslash"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">A Demo Calculator</string>
+    <string name="app_name">Calculator</string>
+    <string name="operand_1">Operand 1</string>
+    <string name="operand_2">Operand 2</string>
+    <string name="zero">0</string>
+    <string name="various_operators">Operand1 Operator Operand2</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="asterisk">*</string>
+    <string name="forwardslash">/</string>
 </resources>
